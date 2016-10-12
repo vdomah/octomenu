@@ -47,9 +47,9 @@ class MenuItem extends Model
         'post' => [
             'RainLab\Blog\Models\Post',
         ],
-        'event' => [
-            'Vdomah\Events\Models\Event',
-        ],
+//        'event' => [
+//            'Vdomah\Events\Models\Event',
+//        ],
     ];
 
     public $hasMany = [
@@ -120,13 +120,13 @@ class MenuItem extends Model
                 ];
                 $this->url = $controller->pageUrl($pageName, $params);
             break;
-            case MenuItem::MODE_EVENT:
-                $params = [
-                    'id' => $this->event->id,
-                    'slug' => $this->event->slug,
-                ];
-                $this->url = $controller->pageUrl($pageName, $params);
-                break;
+//            case MenuItem::MODE_EVENT:
+//                $params = [
+//                    'id' => $this->event->id,
+//                    'slug' => $this->event->slug,
+//                ];
+//                $this->url = $controller->pageUrl($pageName, $params);
+//                break;
         }
 
         return $this->url;
@@ -136,4 +136,5 @@ class MenuItem extends Model
     {
         return $this->mode == self::MODE_HTML ? true : false;
     }
+
 }
