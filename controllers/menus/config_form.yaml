@@ -1,0 +1,10 @@
+name: Menus
+form: $/vdomah/simplexmenu/models/menu/fields.yaml
+modelClass: Vdomah\SimplexMenu\Models\Menu
+defaultRedirect: vdomah/simplexmenu/menus
+create:
+    redirect: 'vdomah/simplexmenu/menus/update/:id'
+    redirectClose: vdomah/simplexmenu/menus
+update:
+    redirect: vdomah/simplexmenu/menus
+    redirectClose: vdomah/simplexmenu/menus

@@ -1,0 +1,19 @@
+<ul class="menu nav navbar-nav">
+{% for item in __SELF__.menu.items %}
+<li class="menu-item menu-item-1 menu-item-level-0 {{ this.page.baseFileName == item.page ? 'current-menu-item' : '' }} {{ item.items.count > 0 ? 'menu-item-has-children' : '' }}">
+    {% if item.is_image %}
+    <a href="{{ item.page|page({slug: false}) }}">
+        <img src="{{ item.image.path }}" alt="" /></a>
+    {% else %}
+    <a href="{{ item.page|page({slug: false}) }}">{{ item.name }}</a>
+    {% endif %}
+    {% if item.items.count > 0 %}
+    <ul class="sub-menu" style="display: none;">
+        {% for subitem in item.items %}
+        <li><a href="{{ subitem.page|page({slug: false}) }}">{{ subitem.name }}</a></li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</li>
+{% endfor %}
+</ul>

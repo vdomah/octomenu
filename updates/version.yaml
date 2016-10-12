@@ -1,0 +1,8 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table vdomah_simplexmenu_menu'
+    - builder_table_create_vdomah_simplexmenu_menu.php
+1.0.3:
+    - 'Created table vdomah_simplexmenu_menuitem'
+    - builder_table_create_vdomah_simplexmenu_menuitem.php

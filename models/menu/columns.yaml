@@ -1,0 +1,11 @@
+columns:
+    name:
+        label: 'vdomah.simplexmenu::lang.fields.name'
+        type: text
+        searchable: true
+        sortable: true
+    code:
+        label: 'vdomah.simplexmenu::lang.fields.code'
+        type: text
+        searchable: true
+        sortable: true

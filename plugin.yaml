@@ -1,0 +1,21 @@
+plugin:
+    name: 'vdomah.simplexmenu::lang.plugin.name'
+    description: 'vdomah.simplexmenu::lang.plugin.description'
+    author: 'Art Gek'
+    icon: oc-icon-list-ol
+    homepage: ''
+navigation:
+    simplex-menu:
+        label: 'Simplex Menu'
+        url: vdomah/simplexmenu/menus
+        icon: icon-list-ol
+        order: '600'
+        sideMenu:
+            simplexmenu-menus:
+                label: Menus
+                url: vdomah/simplexmenu/menus
+                icon: icon-list-ol
+            simplexmenu-menuitems:
+                label: 'Menu Items'
+                url: vdomah/simplexmenu/menuitems
+                icon: icon-list-ul
