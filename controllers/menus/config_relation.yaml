@@ -1,0 +1,9 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+items:
+    label: vdomah.simplexmenu::lang.fields.item
+    form: $/vdomah/simplexmenu/models/menuitem/fields.yaml
+    list: $/vdomah/simplexmenu/models/menuitem/columns.yaml
+    emptyMessage: 'No items'

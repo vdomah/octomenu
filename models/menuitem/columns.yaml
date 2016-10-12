@@ -1,0 +1,11 @@
+columns:
+    showorder:
+        label: 'vdomah.simplexmenu::lang.fields.showorder'
+        type: number
+        searchable: true
+        sortable: true
+    name:
+        label: 'vdomah.simplexmenu::lang.fields.name'
+        type: text
+        searchable: true
+        sortable: true

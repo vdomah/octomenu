@@ -1,0 +1,14 @@
+fields:
+    name:
+        label: 'vdomah.simplexmenu::lang.fields.name'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    code:
+        label: 'vdomah.simplexmenu::lang.fields.code'
+        span: auto
+        oc.commentPosition: ''
+        type: text
+        preset:
+            field: name
+            type: slug

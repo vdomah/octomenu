@@ -1,0 +1,88 @@
+fields:
+    name:
+        label: 'vdomah.simplexmenu::lang.fields.name'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    showorder:
+        label: 'vdomah.simplexmenu::lang.fields.showorder'
+        span: auto
+        oc.commentPosition: ''
+        type: dropdown
+    menu:
+        label: 'vdomah.simplexmenu::lang.fields.menu'
+        span: auto
+        oc.commentPosition: ''
+        type: relation
+    parent:
+        label: 'vdomah.simplexmenu::lang.fields.parent'
+        span: auto
+        oc.commentPosition: ''
+        type: dropdown
+    is_image:
+        label: 'vdomah.simplexmenu::lang.fields.is_image'
+        span: auto
+        oc.commentPosition: ''
+        type: switch
+    image:
+        label: vdomah.simplexmenu::lang.fields.image
+        type: fileupload
+        mode: image
+        imageWidth: 200
+        imageHeight: 200
+        trigger:
+            action: show
+            field: is_image
+            condition: 'value[0]'
+    mode:
+        label: 'vdomah.shoptoproduct::lang.fields.mode'
+        span: right
+        comment: 'vdomah.shoptoproduct::lang.mode.comment'
+        type: dropdown
+        tab: 'vdomah.shoptoproduct::lang.tabs.dev'
+    page:
+        label: 'vdomah.simplexmenu::lang.fields.page'
+        span: auto
+        oc.commentPosition: ''
+        type: dropdown
+        trigger:
+            action: show
+            field: mode
+            condition: 'value[0]'
+    link:
+        label: 'vdomah.simplexmenu::lang.fields.link'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+        trigger:
+            action: show
+            field: mode
+            condition: 'value[1]'
+    post:
+        label: 'vdomah.shoptoproduct::lang.fields.post'
+        nameFrom: title
+        emptyOption: ' - None - '
+        span: left
+        type: relation
+        trigger:
+            action: show
+            field: mode
+            condition: 'value[2]'
+    event:
+        label: 'vdomah.shoptoproduct::lang.fields.event'
+        nameFrom: name
+        emptyOption: ' - None - '
+        span: left
+        type: relation
+        trigger:
+            action: show
+            field: mode
+            condition: 'value[3]'
+    html:
+        label: 'vdomah.shoptoproduct::lang.fields.html'
+        span: left
+        type: textarea
+        trigger:
+            action: show
+            field: mode
+            condition: 'value[4]'

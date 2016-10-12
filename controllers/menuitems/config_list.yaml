@@ -1,0 +1,11 @@
+list: $/vdomah/simplexmenu/models/menuitem/columns.yaml
+modelClass: Vdomah\SimplexMenu\Models\MenuItem
+title: Menuitems
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'vdomah/simplexmenu/menuitems/update/:id'
